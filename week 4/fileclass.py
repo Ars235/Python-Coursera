@@ -42,7 +42,7 @@ class File:
 
 	def __iter__(self):
 		file = open(self.file_path, 'r')
-		return self.file_path
+		return file
 
 	def __next__(self):
 		if self.index >= self.length:
