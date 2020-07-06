@@ -46,6 +46,7 @@ class File:
 
 	def __next__(self):
 		if self.index >= self.length:
+			self.__iter__().close()
 			raise StopIteration
 		index = self.index
 		self.index += 1
