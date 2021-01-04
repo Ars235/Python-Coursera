@@ -21,8 +21,8 @@ def read_data(storage_path, args):
 		return None
 
 	for i in range(len(data[args.key])):
-		# надо это все через запятые высрать
-		if i != len(data[args.key]) - 1: # костыли ну а хули и нет
+		# тneed to put commas in output
+		if i != len(data[args.key]) - 1:
 			print(data[args.key][i], end = ', ')
 		else:
 			print(data[args.key][i])
